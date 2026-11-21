@@ -150,6 +150,16 @@ st.sidebar.write("0.50 is the default. About 0.23 catches more toxic compounds "
                  "but raises more false alarms.")
 st.sidebar.write(f"Model trained on {n_train} compounds.")
 
+with st.sidebar.expander("New to chemistry? Quick guide", expanded=True):
+    st.markdown("""
+| Term | Simple meaning |
+|---|---|
+| **Pesticide** | Any chemical used to kill or control pests on crops. |
+| **Insecticide** | A pesticide that kills insects. It often harms bees too. |
+| **Herbicide** | A pesticide that kills weeds. |
+| **Fungicide** | A pesticide that kills mould and fungus. |
+""")
+
 # ------------------------- Inputs -------------------------
 EXAMPLES = {
     "Custom (type below)": "",
